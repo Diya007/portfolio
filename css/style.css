@@ -12,12 +12,12 @@ ul.navbar{
 }
 
 
-li {
+ul.navbar li {
 	display: inline-block;
 	float: left;
 }
 
-li a {	
+ul.navbar li a {	
 	display: inline-block;
 	color: white;
 	text-align: center;
@@ -26,22 +26,36 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover {
+ul.navbar li a:hover {
 	background-color: #111;
 }
 
-li.icon{
+ul.navbar li.icon {
 	display: none;
 }
+
+ul.navbar li#linkedin, li#github, li#email {
+	float: right;
+}
+
+// li#linkedin a, li#github a {
+// 	font-size: 20px;
+// }
+
 
 @media screen and (max-width: 680px) {
 	ul.navbar li:not(:first-child) {
 		display: none;
 	}
-	ul.navbar li.icon {
+	ul.navbar li.icon  {
 		float: right;
 		display: inline-block;
 	}
+
+	ul.navbar li#linkedin, li#github, li#email {
+		display: none;	
+	}
+
 	ul.navbar.responsive {
 		position: relative;
 	}
