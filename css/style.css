@@ -1,0 +1,76 @@
+body {
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul.navbar{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+}
+
+
+li {
+	display: inline-block;
+	float: left;
+}
+
+li a {	
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 40px 20px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+li.icon{
+	display: none;
+}
+
+@media screen and (max-width: 680px) {
+	ul.navbar li:not(:first-child) {
+		display: none;
+	}
+	ul.navbar li.icon {
+		float: right;
+		display: inline-block;
+	}
+	ul.navbar.responsive {
+		position: relative;
+	}
+
+	ul.navbar.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.navbar.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.navbar.responsive li a {
+        display: block;
+        text-align: center;
+	}
+}
+
+	
+
+section.aboutMe{
+	background-color: blue;
+}
+
+section.aboutMe div#coder{
+	float: left;
+}
+section.aboutMe div#dreamer{
+	float: right;
+}
+

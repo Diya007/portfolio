@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="Diya, zdy.gogo@msn.com">
+		<meta name="description" content="portifolio, front end developer">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Diya Zhao's Portfolio</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="navbar" id="topNav">
+					<li id="logo"><a href="#">Diya</a></li>
+					<li id="about"><a href="#">about</a></li>
+					<li id="projects"><a href="#">projects</a></li>
+					<li id="contact"><a href="#">contact</a></li>
+					<li class="icon">
+						<a href="javascript:void(0);" onclick="myFunction()">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</a>
+        			</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="aboutMe">
+			<div id="coder">
+				<div id="coder-desc">
+					Coder
+					<p>Some text some text some text some text..</p>
+					<p>Some text some text some text some text..</p>
+					<p>Some text some text some text some text..</p>
+					<p>Some text some text some text some text..</p>
+				</div>
+			</div>
+			<div id="dreamer">
+				<div id="dreamer-desc">
+					Dreamer
+					<p>Some text some text some text some text..</p>
+					<p>Some text some text some text some text..</p>
+					<p>Some text some text some text some text..</p>
+					<p>Some text some text some text some text..</p>
+				</div>
+			</div>
+
+		</section>
+	  
+		<script>
+			function myFunction() {
+					    var x = document.getElementById("topNav");
+					    if (x.className === "navbar") {
+					        x.className += " responsive";
+					        console.log('hello')
+					    } else {
+			        x.className = "navbar";
+			    }
+			}
+		</script>
+	</body>
+</html>
