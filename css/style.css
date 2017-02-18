@@ -71,23 +71,28 @@ ul.navbar li#linkedin, li#github, li#email {
 	}
 }
 
-.resume {
-	display: table;
-	width: 100%;
-	padding-bottom: 10%;
+// section.aboutMe {
+// 	display: flex;
+// }
+
+.basic-info {
+	display: -webkit-flex;
+    display: flex;
+	padding: 10% 5%;
+	// padding-bottom: 10%;
 	background-color: blue;
 }
 
 .left-categry {
-	display: table-cell;
-	margin-top: 15%;
-	margin-left: 15%;	
-	float: left;
+	-webkit-flex: 1;
+    flex: 1;
 	font-size: 20px;
 }	
 
 .profile-pic {
-	display: table-cell;
+	-webkit-flex: 1;
+    flex: 1;
+	font-size: 20px;
 
 }
 
@@ -100,13 +105,18 @@ img.my-pic {
 	border-radius: 50%;
 }
 
-
 .right-categry {
-	display: table-cell;
-	margin-top: 15%;
-	margin-right: 15%;
-	float: right;
+	-webkit-flex: 1;
+    flex: 1;
 	font-size: 20px;
+}
+
+// basic info section
+
+.container {
+	display: table;
+	background-color: yellow;
+
 }
 
 @media only screen and (max-width: 768px) {
