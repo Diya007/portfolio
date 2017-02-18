@@ -10,7 +10,7 @@ div.background {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url('http://ichef.bbci.co.uk/images/ic/1600xn/p02pkxly.jpg');
+    background: url('../img/univers1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -172,7 +172,6 @@ div.center-title p {
 
 img.myPhoto {
 	position:absolute;
-	// float: left;
 	text-align: left;
 	display: block;
 	margin: auto;
@@ -216,11 +215,33 @@ animation-direction: alternate;
 	float: left;
 	display: inline;
 }
+section.projects {
+	// display: flex;
+	text-align: center;
+	text-decoration: none;
+	color:white;
 
+}
 
 section.projects div.container {
+	// display: flex;
+	// text-align: center;
 	padding: 1% 5%;
 	background: rgba(124, 127, 181, 0.4);
+}
+
+li.project img {
+	width: 300px;
+	height: 300px;
+}
+
+li.project {
+	display: inline-block;
+	 width: 25%;
+    margin: 0 20px 40px;
+	min-width: 300px;
+    min-height: 280px;
+
 }
 
 
