@@ -149,35 +149,55 @@ img.my-pic {
 }
 
 section.resume div.container {
-	display: -webkit-flex;
-    display: flex;
-     -webkit-flex-direction: column;
-    flex-direction: column;
-	padding: 10% 5%;
-	background: rgba(128, 122, 122, 0.6);
+	padding: 1% 10%;
+	background-color: white;
+}
+
+
+
+div.center-title p {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+.center-title {
+	background-color: #4c245d;
+	height: 50px;
+	line-height: 50px;
+	width: 250px;
+	margin: auto;
+}
+
+
+img.myPhoto {
+	float: left;
+	text-align: left;
+	display: block;
+	margin: auto;
+	width: 150px;
+    height: 150px;
+    overflow: hidden;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.intro-text {
+	margin-left: 3%;
+	text-align: left;
+}
+
+.skills {
+	float: left;
+	text-align: left;
+	display: inline;
 }
 
 
 section.projects div.container {
-	display: -webkit-flex;
-    display: flex;
-	padding: 10% 5%;
+	padding: 1% 5%;
 	background: rgba(124, 127, 181, 0.4);
 }
-
-div.center-title h2 {
-	text-align: center;
-	line-height: 50%;
-}
-
-.center-title {
-	-webkit-flex: 1;
-    flex: 1;
-	background-color: #f4594e;
-	height: 50px;
-	width: 250px;
-}
-
 
 
 
