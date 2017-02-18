@@ -171,7 +171,8 @@ div.center-title p {
 
 
 img.myPhoto {
-	float: left;
+	position:absolute;
+	// float: left;
 	text-align: left;
 	display: block;
 	margin: auto;
@@ -182,14 +183,37 @@ img.myPhoto {
 	z-index: 3;
 }
 
+
+@keyframes fadeInOut {
+	0% { 
+	  	opacity:1;
+	}
+	45% {
+		opacity:1;
+	}
+
+	55% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+img#top {
+animation-name: fadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 6s;
+animation-direction: alternate;
+}
+
 .intro-text {
-	margin-left: 3%;
-	text-align: left;
+	margin-left: 20%;
 }
 
 .skills {
 	float: left;
-	text-align: left;
 	display: inline;
 }
 
