@@ -3,22 +3,37 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+div.background {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('http://ichef.bbci.co.uk/images/ic/1600xn/p02pkxly.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 ul.navbar{
 	list-style-type: none;
 	margin: 0;
-    padding: 0 5% 0 5%;
+    padding: 0;
 	overflow: hidden;
-	background-color: #333333;
+	position: fixed;
+	background-color: rgba(4, 4, 4, 0.78);
+    width: 100%;
+    z-index: 2;
 }
 
 
 ul.navbar li {
-	display: inline-block;
 	float: left;
+	padding-right: 1%;
 }
 
 ul.navbar li a {	
-	display: inline-block;
+	display: block;
 	color: white;
 	text-align: center;
 	padding: 40px 20px;
@@ -71,22 +86,25 @@ ul.navbar li#linkedin, li#github, li#email {
 	}
 }
 
-// section.aboutMe {
-// 	display: flex;
-// }
+section.aboutMe, section.resume, section.projects {
+	position: relative;
+    z-index: 1;
+}
 
 .basic-info {
 	display: -webkit-flex;
     display: flex;
 	padding: 10% 5%;
-	// padding-bottom: 10%;
-	background-color: blue;
+	background-color: rgba(25, 14, 14, 0.33);
+	
 }
 
 .left-categry {
 	-webkit-flex: 1;
     flex: 1;
 	font-size: 20px;
+	color: white;
+	padding-top: 5%;
 }	
 
 .profile-pic {
@@ -108,35 +126,59 @@ img.my-pic {
 .right-categry {
 	-webkit-flex: 1;
     flex: 1;
+    float: right;
 	font-size: 20px;
+	color: white;
+	padding-top: 5%;
 }
 
-// basic info section
-
-.container {
-	display: table;
-	background-color: yellow;
-
-}
 
 @media only screen and (max-width: 768px) {
-	.resume {
-		padding: 0;
+	.profile-pic {
+		width: 100%;
 	}
 
 	.left-categry {
 		width: 100%;
-		float: left;
 	}
 
 	.right-categry {
-		float: left;
 		width: 100%;
 	}
-	.profile-pic {
-		display: none;
-	}
-
+	
 }
+
+section.resume div.container {
+	display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+	padding: 10% 5%;
+	background: rgba(128, 122, 122, 0.6);
+}
+
+
+section.projects div.container {
+	display: -webkit-flex;
+    display: flex;
+	padding: 10% 5%;
+	background: rgba(124, 127, 181, 0.4);
+}
+
+div.center-title h2 {
+	text-align: center;
+	line-height: 50%;
+}
+
+.center-title {
+	-webkit-flex: 1;
+    flex: 1;
+	background-color: #f4594e;
+	height: 50px;
+	width: 250px;
+}
+
+
+
 
 
