@@ -215,19 +215,21 @@ animation-direction: alternate;
 	float: left;
 	display: inline;
 }
+
 section.projects {
-	// display: flex;
 	text-align: center;
 	text-decoration: none;
 	color:white;
-
 }
 
 section.projects div.container {
-	// display: flex;
-	// text-align: center;
-	padding: 1% 5%;
+	padding: 1% 10%;
 	background: rgba(124, 127, 181, 0.4);
+}
+
+.gallery ul {
+    margin: 0;
+    padding: 5% 0;
 }
 
 li.project img {
