@@ -36,8 +36,9 @@ ul.navbar li a {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 40px 20px;
-	font-size: 20px;
+	padding: 35px 10px;
+	font-size: 22px;
+	margin-left: 20px;
 	text-decoration: none;
 }
 
@@ -86,7 +87,7 @@ ul.navbar li#linkedin, li#github, li#email {
 	}
 }
 
-section.aboutMe, section.resume, section.projects {
+section.aboutMe, section.resume, section.projects, section.footer {
 	position: relative;
     z-index: 1;
 }
@@ -107,24 +108,28 @@ section.aboutMe, section.resume, section.projects {
 	padding-top: 5%;
 }	
 
+.left-categry h1, .right-categry h1 {
+	text-align: center;
+}
+
 .profile-pic {
 	-webkit-flex: 1;
     flex: 1;
-	font-size: 20px;
-
+	size: 50px;
+	color:rgb(225, 162, 255);
 }
 
 img.my-pic {
 	display: block;
 	margin: auto;
+	padding-top: 20px;
 	width: 300px;
-    height: 300px;
-    overflow: hidden;
-	border-radius: 50%;
+    height: 320px;
 }
 
 .right-categry {
 	-webkit-flex: 1;
+	text-align: right;
     flex: 1;
     float: right;
 	font-size: 20px;
@@ -149,7 +154,7 @@ img.my-pic {
 }
 
 section.resume div.container {
-	padding: 1% 10%;
+	padding: 2% 10%;
 	background-color: white;
 }
 
@@ -169,19 +174,17 @@ div.center-title p {
 	margin: auto;
 }
 
-
 img.myPhoto {
 	position:absolute;
 	text-align: left;
 	display: block;
 	margin: auto;
-	width: 150px;
-    height: 150px;
+	width: 180px;
+    height: 180px;
     overflow: hidden;
 	border-radius: 50%;
 	z-index: 3;
 }
-
 
 @keyframes fadeInOut {
 	0% { 
@@ -200,11 +203,11 @@ img.myPhoto {
 }
 
 img#top {
-animation-name: fadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 6s;
-animation-direction: alternate;
+	animation-name: fadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-direction: alternate;
 }
 
 .intro-text {
@@ -212,40 +215,68 @@ animation-direction: alternate;
 }
 
 .skills {
-	float: left;
-	display: inline;
+	display: inline-block;
 }
 
+/*section projects*/
 section.projects {
 	text-align: center;
 	text-decoration: none;
 	color:white;
+	margin: 0;
 }
 
+
 section.projects div.container {
-	padding: 1% 10%;
+	padding: 2% 5%;
 	background: rgba(124, 127, 181, 0.4);
 }
 
 .gallery ul {
     margin: 0;
-    padding: 5% 0;
+    padding: 2% 0;
 }
 
 li.project img {
 	width: 300px;
-	height: 300px;
+	height: 280px;
 }
 
 li.project {
 	display: inline-block;
-	 width: 25%;
-    margin: 0 20px 40px;
+	width: 25%;
+	margin: 3% 1%;
 	min-width: 300px;
     min-height: 280px;
-
 }
 
+@media scree and (max-width: 600px) {
+	li.project img {
+		max-width: 100%;
+	}
+}
 
+section.footer div.container {
+	padding: 2% 10%;
+	background-color: white;
+
+}
+section.footer {
+	text-align: center;
+	text-decoration: none;
+	
+	margin: 0;
+}
+.footer ul {
+    margin: 0;
+    padding: 2% 0;
+}
+
+div.contacts ul li{
+	display: inline-block;
+	padding: 20px;
+	font-size: 50px;
+	
+}
 
 
