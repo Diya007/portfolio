@@ -159,13 +159,24 @@ div.center-title p {
 /* image and intro div*/
 section.resume div.intro {
 	margin: 0 15%;
+	display: inline-block;
 }
 
+.intro-photo {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 180px;
+    height: 180px;
+	outline: 1px solid red;
+}
 /*intro text*/
 .intro-paragrah {
+	display: inline-block;
+	vertical-align: top;
 	width: 60%;
-	margin: 5% 30%;
 	color: #4c245d;
+	outline: 1px solid blue;
 }
 
 img.myPhoto {
@@ -214,6 +225,7 @@ img#top {
 	display: inline-block;
 	margin: 0 2%;
 	color: #4c245d;
+	outline: 1px solid red;
 
 }
 .skill-category div.skill-icon {
@@ -235,20 +247,22 @@ div.resume-desc h4, p {
 	font-size: 10px;
 }
 
-@media scree and (max-width: 740px) {
+@media screen and (max-width: 740px) {
 
 	div.intro-photo {
 		width: 100%;
 	}
 
 	div.intro-paragrah {
+		display: block;
 		width: 100%;
 	}
 	div.intro-paragrah p {
 		width: 100%;
 
 	}
-	div.skills div.skill-category {
+    .skill-category {
+		outline: 1px solid green;
 		width: 100%;
 	}
 }
