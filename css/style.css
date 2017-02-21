@@ -106,6 +106,7 @@ section.aboutMe, section.resume, section.projects, section.footer {
 	font-size: 20px;
 	color: white;
 	padding-top: 5%;
+	text-shadow: 0 0 0.1em #ececec;
 }	
 
 .left-categry h1, .right-categry h1 {
@@ -135,6 +136,7 @@ img.my-pic {
 	font-size: 20px;
 	color: white;
 	padding-top: 5%;
+	text-shadow: 0 0 0.1em #ececec;
 }
 
 
@@ -237,18 +239,54 @@ section.projects div.container {
     padding: 2% 0;
 }
 
-li.project img {
+li.project {
+	display: inline-block;
+	padding: 1%;
+}
+
+li.project div.image {
+	width: 300px;
+	height: 280px;
+	display: block;
+	position: relative;
+}
+
+div.image img {
 	width: 300px;
 	height: 280px;
 }
-
-li.project {
-	display: inline-block;
-	width: 25%;
-	margin: 3% 1%;
-	min-width: 300px;
-    min-height: 280px;
+li.project div.image div.img-hover{
+  background: rgba(249, 221, 249, 0.85);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
 }
+
+li.project div.image:hover div.img-hover {
+	opacity: .8;
+	transition: opacity .5s;
+}
+
+ul.chrom-github {
+	height: 100%;
+}
+ul.chrom-github li img {
+	height: 80px;
+	width: 80px;
+}
+
+ul.chrom-github li{
+	display: inline-block;
+	margin-top: 30%;
+	padding: 0 5%;
+}
+
+
 
 @media scree and (max-width: 600px) {
 	li.project img {
