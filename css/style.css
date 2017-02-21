@@ -138,7 +138,7 @@ div#hex-box div.intro h1, div#hex-box div.intro p{
 /*----------------------resume-----------------------*/
 
 section.resume div.container {
-	padding: 2% 0;
+	padding: 3% 0;
 	background-color: white;
 }
 
@@ -158,7 +158,7 @@ div.center-title p {
 
 /* image and intro div*/
 section.resume div.intro {
-	margin: 0 15%;
+	margin: 3% 15%;
 	display: inline-block;
 }
 
@@ -174,6 +174,7 @@ section.resume div.intro {
 .intro-paragrah {
 	display: inline-block;
 	vertical-align: top;
+	padding: 0 2%;
 	width: 60%;
 	color: #4c245d;
 	outline: 1px solid blue;
@@ -217,7 +218,7 @@ img#top {
 
 /* skill div*/
 .skills {
-	margin: 8% 0;
+	margin: 0 15%;
 }
 
 .skill-category {
@@ -251,10 +252,18 @@ div.resume-desc h4, p {
 
 	div.intro-photo {
 		width: 100%;
+		width: 300px;
+		height: 300px;
+
+	}
+	img.myPhoto {
+		width: 300px;
+		height: 300px;
 	}
 
 	div.intro-paragrah {
 		display: block;
+		margin-top: 2%;
 		width: 100%;
 	}
 	div.intro-paragrah p {
@@ -263,6 +272,7 @@ div.resume-desc h4, p {
 	}
     .skill-category {
 		outline: 1px solid green;
+		margin-top: 2%;
 		width: 100%;
 	}
 }
