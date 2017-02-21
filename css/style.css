@@ -43,7 +43,7 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
-	background-color: #111;
+	background-color: rgb(91, 26, 115);
 }
 
 ul.navbar li.icon {
