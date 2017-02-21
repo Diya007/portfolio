@@ -15,6 +15,7 @@ div.background {
     background-repeat: no-repeat;
 }
 
+/*--------------nav bar-----------------------*/
 ul.navbar{
 	list-style-type: none;
 	margin: 0;
@@ -55,7 +56,7 @@ ul.navbar li#linkedin, li#github, li#email {
 }
 
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 725px) {
 	ul.navbar li:not(:first-child) {
 		display: none;
 	}
@@ -86,81 +87,60 @@ ul.navbar li#linkedin, li#github, li#email {
         text-align: center;
 	}
 }
-
+/*----------------------aboutme-----------------------*/
 section.aboutMe, section.resume, section.projects, section.footer {
 	position: relative;
     z-index: 1;
 }
 
-.basic-info {
-	display: -webkit-flex;
-    display: flex;
-	padding: 10% 5%;
-	background-color: rgba(25, 14, 14, 0.33);
-	
+section.aboutMe div.container {
+	padding: 15% 0;
 }
 
-.left-categry {
-	-webkit-flex: 1;
-    flex: 1;
-	font-size: 20px;
-	color: white;
-	padding-top: 5%;
-	text-shadow: 0 0 0.1em #ececec;
-}	
-
-.left-categry h1, .right-categry h1 {
-	text-align: center;
+/*outer box*/
+section.aboutMe div.container div#hex-box {
+    height: 320px;
+	display: block;
+	position:relative;
 }
 
-.profile-pic {
-	-webkit-flex: 1;
-    flex: 1;
-	size: 50px;
-	color:rgb(225, 162, 255);
-}
-
-img.my-pic {
+/*img*/
+img.hex {
 	display: block;
 	margin: auto;
-	padding-top: 20px;
 	width: 300px;
     height: 320px;
 }
 
-.right-categry {
-	-webkit-flex: 1;
-	text-align: right;
-    flex: 1;
-    float: right;
-	font-size: 20px;
+/*inner box*/
+div#hex-box div.intro {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+/*inner box text*/
+div#hex-box div.intro h1, div#hex-box div.intro p{
+	text-align: center;
+	font-size: 50px;
 	color: white;
-	padding-top: 5%;
-	text-shadow: 0 0 0.1em #ececec;
+	text-shadow: 0 0 0.1em #ececec;	
 }
 
-
-@media only screen and (max-width: 768px) {
-	.profile-pic {
-		width: 100%;
-	}
-
-	.left-categry {
-		width: 100%;
-	}
-
-	.right-categry {
-		width: 100%;
-	}
-	
+@media only screen and (max-width: 770px) {
+	section.aboutMe div.container div#hex-box {
+		margin: 10% 0;
+	}	
 }
+
+/*----------------------resume-----------------------*/
 
 section.resume div.container {
-	padding: 2% 10%;
+	padding: 2% 0;
 	background-color: white;
 }
-
-
 
 div.center-title p {
 	text-align: center;
@@ -174,6 +154,16 @@ div.center-title p {
 	line-height: 50px;
 	width: 250px;
 	margin: auto;
+}
+
+/* image and intro div*/
+section.resume div.intro {
+	margin: 0 15%;
+}
+/*intro text*/
+.intro-paragrah {
+	margin: 5% 30%;
+	color: #4c245d;
 }
 
 img.myPhoto {
@@ -212,15 +202,35 @@ img#top {
 	animation-direction: alternate;
 }
 
-.intro-text {
-	margin-left: 20%;
-}
 
 .skills {
-	display: inline-block;
+	margin: 3% 15%;
+
 }
 
-/*section projects*/
+.skill-category {
+	display: inline-block;
+	padding: 2% 2%;
+	color: #4c245d;
+}
+.skill-category div.skill-icon {
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+@media scree and (max-width: 1157px) {
+	.skills {
+		margin: 1% 15%;
+	}
+	.skill-category {
+		display: inline-block;
+		padding: 2% 1%;
+	}
+	img.myPhoto {
+		display: inline-block;
+	}
+}
+/*------------------------projects-------------------------*/
 section.projects {
 	text-align: center;
 	text-decoration: none;
@@ -294,6 +304,7 @@ ul.chrom-github li{
 	}
 }
 
+/*----------------------footer-----------------------*/
 section.footer div.container {
 	padding: 2% 10%;
 	background-color: white;
