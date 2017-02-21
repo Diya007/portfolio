@@ -160,8 +160,10 @@ div.center-title p {
 section.resume div.intro {
 	margin: 0 15%;
 }
+
 /*intro text*/
 .intro-paragrah {
+	width: 60%;
 	margin: 5% 30%;
 	color: #4c245d;
 }
@@ -202,32 +204,52 @@ img#top {
 	animation-direction: alternate;
 }
 
-
+/* skill div*/
 .skills {
-	margin: 3% 15%;
-
+	margin: 8% 0;
 }
 
 .skill-category {
+    width: 45%;
 	display: inline-block;
-	padding: 2% 2%;
+	margin: 0 2%;
 	color: #4c245d;
+
 }
 .skill-category div.skill-icon {
 	font-size: 25px;
 	font-weight: bolder;
+
+}
+div.resume-desc ul {
+	margin:0;
+	padding: 0px;
 }
 
-@media scree and (max-width: 1157px) {
-	.skills {
-		margin: 1% 15%;
+
+div.resume-desc h4, p {
+	margin: 0;
+}
+
+.year {
+	font-size: 10px;
+}
+
+@media scree and (max-width: 740px) {
+
+	div.intro-photo {
+		width: 100%;
 	}
-	.skill-category {
-		display: inline-block;
-		padding: 2% 1%;
+
+	div.intro-paragrah {
+		width: 100%;
 	}
-	img.myPhoto {
-		display: inline-block;
+	div.intro-paragrah p {
+		width: 100%;
+
+	}
+	div.skills div.skill-category {
+		width: 100%;
 	}
 }
 /*------------------------projects-------------------------*/
