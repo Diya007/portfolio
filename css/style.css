@@ -28,6 +28,8 @@ ul.navbar{
     width: 100%;
     z-index: 2;
 }
+
+
 ul.navbar li {
 	float: left;
 	padding-right: 1%;
