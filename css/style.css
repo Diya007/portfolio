@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
@@ -26,8 +28,6 @@ ul.navbar{
     width: 100%;
     z-index: 2;
 }
-
-
 ul.navbar li {
 	float: left;
 	padding-right: 1%;
@@ -102,7 +102,7 @@ section.aboutMe div.container div#hex-box {
     height: 320px;
 	display: block;
 	position:relative;
-	outline: 1px solid red;
+	// outline: 1px solid red;
 }
 
 /*img*/
@@ -111,7 +111,7 @@ img.hex {
 	margin: auto;
 	width: 300px;
     height: 320px;
-    outline: 1px solid green;
+    // outline: 1px solid green;
 
 }
 
@@ -163,7 +163,7 @@ div.center-title p {
 section.resume div.intro {
 	margin: 3% 15%;
 	display: inline-block;
-	padding-bottom: 15px;
+	padding-bottom: 25px;
 	border-bottom: 5px solid #4c245d;
 	// outline: 1px solid red;
 }
@@ -193,7 +193,7 @@ img.myPhoto {
 	display: block;
 	margin: auto;
 	width: 180px;
-    height: 180px;
+    height: 200px;
     overflow: hidden;
 	border-radius: 50%;
 	z-index: 3;
