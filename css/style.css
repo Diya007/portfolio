@@ -312,15 +312,15 @@ li.project {
 }
 
 li.project div.image {
-	width: 300px;
-	height: 280px;
+	width: 450px;
+	height: 300px;
 	display: block;
 	position: relative;
 }
 
 div.image img {
-	width: 300px;
-	height: 280px;
+	width: 450px;
+	height: 300px;
 }
 li.project div.image div.img-hover{
   background: rgba(249, 221, 249, 0.85);
