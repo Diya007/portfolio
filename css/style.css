@@ -21,12 +21,12 @@ div.background {
 ul.navbar{
 	list-style-type: none;
 	margin: 0;
-    padding: 0;
+	padding: 0;
 	overflow: hidden;
 	position: fixed;
 	background-color: rgba(4, 4, 4, 0.78);
-    width: 100%;
-    z-index: 2;
+	width: 100%;
+	z-index: 2;
 }
 
 
@@ -85,14 +85,14 @@ ul.navbar li#linkedin, li#github, li#email {
 		display: inline;
 	}
 	ul.navbar.responsive li a {
-        display: block;
-        text-align: center;
+	    display: block;
+	    text-align: center;
 	}
 }
 /*----------------------aboutme-----------------------*/
 section.aboutMe, section.resume, section.projects, section.footer {
 	position: relative;
-    z-index: 1;
+	z-index: 1;
 }
 
 section.aboutMe div.container {
@@ -104,7 +104,6 @@ section.aboutMe div.container div#hex-box {
     height: 320px;
 	display: block;
 	position:relative;
-	// outline: 1px solid red;
 }
 
 /*img*/
@@ -113,8 +112,6 @@ img.hex {
 	margin: auto;
 	width: 300px;
     height: 320px;
-    // outline: 1px solid green;
-
 }
 
 /*inner box*/
