@@ -164,7 +164,7 @@ section.resume div.intro {
 	display: inline-block;
 	padding-bottom: 25px;
 	border-bottom: 5px solid #4c245d;
-	// outline: 1px solid red;
+	/*outline: 1px solid red;*/
 }
 
 .intro-photo {
@@ -173,7 +173,7 @@ section.resume div.intro {
 	position: relative;
 	width: 180px;
     height: 180px;
-	// outline: 1px solid red;
+	/*outline: 1px solid red;*/
 }
 
 /*intro text*/
@@ -183,7 +183,7 @@ section.resume div.intro {
 	padding: 0 2%;
 	width: 60%;
 	color: #4c245d;
-	// outline: 1px solid blue;
+	/*outline: 1px solid blue;*/
 }
 
 img.myPhoto {
@@ -225,7 +225,7 @@ img#top {
 /* skill div*/
 .skills {
 	margin: -3% 10% 2% 10%;
-	// outline: 1px solid blue;
+	/*outline: 1px solid blue;*/
 }
 
 /*skill-categry hold title and ul div*/
@@ -235,7 +235,7 @@ img#top {
 	margin: 0 2%;
 	color: #4c245d;
 	text-align: center;
-	// outline: 1px solid red;
+	/*outline: 1px solid red;*/
 }
 div.resume-desc ul {
 	margin:0;
@@ -279,9 +279,9 @@ li.row4 img, .row5 img, .row6 img, .row7 img {
 
 	}
     .skill-category {
-		outline: 1px solid green;
 		margin-top: 2%;
 		width: 100%;
+		/*outline: 1px solid green;*/
 	}
 }
 /*------------------------projects-------------------------*/
